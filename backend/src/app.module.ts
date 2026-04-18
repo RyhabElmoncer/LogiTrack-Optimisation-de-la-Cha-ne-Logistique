@@ -1,0 +1,31 @@
+import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { StocksModule } from './modules/stocks/stocks.module';
+import { WipModule } from './modules/wip/wip.module';
+import { CommandesModule } from './modules/commandes/commandes.module';
+import { DashboardModule } from './modules/dashboard/dashboard.module';
+import { AuthModule } from './modules/auth/auth.module';
+import { UtilisateursModule } from './modules/utilisateurs/utilisateurs.module';
+
+@Module({
+  imports: [
+    TypeOrmModule.forRoot({
+      type: 'mssql',
+      host: process.env.DB_HOST || 'localhost',
+      port: parseInt(process.env.DB_PORT) || 1433,
+      username: process.env.DB_USER || 'sa',
+      password: process.env.DB_PASSWORD || 'YourPassword123',
+      database: process.env.DB_NAME || 'LogistiqueDB',
+      entities: [__dirname + '/**/*.entity{.ts,.js}'],
+      synchronize: false,
+      options: { encrypt: false },
+    }),
+    AuthModule,
+    UtilisateursModule,
+    StocksModule,
+    WipModule,
+    CommandesModule,
+    DashboardModule,
+  ],
+})
+export class AppModule {}
