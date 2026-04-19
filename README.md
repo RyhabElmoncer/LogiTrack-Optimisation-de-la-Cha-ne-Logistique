@@ -22,9 +22,9 @@ Application web intelligente dédiée au **suivi, l’analyse et l’optimisatio
 
 ---
 
-## ⚙️ Installation & Lancement
+##  Installation & Lancement
 
-### 📌 1. Base de données
+###  1. Base de données
 
 Ouvrir SQL Server Management Studio et exécuter :
 
@@ -36,7 +36,7 @@ backend/database.sql
 
 ---
 
-### 📌 2. Backend (NestJS)
+###  2. Backend (NestJS)
 
 ```bash
 cd backend
@@ -76,7 +76,7 @@ http://localhost:3000
 
 ---
 
-## 🔐 Comptes de Test
+##  Comptes de Test
 
 | Rôle                   | Email                                                           | Mot de passe |
 | ---------------------- | --------------------------------------------------------------- | ------------ |
@@ -174,13 +174,13 @@ GET    /api/utilisateurs
 
 
 
-## 👨‍💻 Auteur
+##  Auteur
 
 Ryhab Elmoncer
 Passionné par le développement web & mobile
 
 ---
 
-## 📄 Licence
+## Licence
 
 Projet réalisé dans un cadre académique (PFE).
