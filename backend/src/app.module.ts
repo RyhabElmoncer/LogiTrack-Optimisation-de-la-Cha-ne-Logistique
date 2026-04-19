@@ -9,16 +9,20 @@ import { UtilisateursModule } from './modules/utilisateurs/utilisateurs.module';
 
 @Module({
   imports: [
-    TypeOrmModule.forRoot({
-      type: 'mysql',
-      host: process.env.DB_HOST || 'localhost',
-      port: parseInt(process.env.DB_PORT) || 3306,
-      username: process.env.DB_USER || 'root',
-      password: process.env.DB_PASSWORD || '',
-      database: process.env.DB_NAME || 'LogistiqueDB',
-      entities: [__dirname + '/**/*.entity{.ts,.js}'],
-      synchronize: false,
-    }),
+   TypeOrmModule.forRoot({
+  type: 'mssql',
+  host: 'localhost',
+  port: 1433,
+  username: 'root',             
+  password: '',   
+  database: 'LogistiqueDB',
+  entities: [__dirname + '/**/*.entity{.ts,.js}'],
+  synchronize: false,
+  options: { 
+    encrypt: false,
+    trustServerCertificate: true,  // ← ajouter ça
+  },
+}),
     AuthModule,
     UtilisateursModule,
     StocksModule,
