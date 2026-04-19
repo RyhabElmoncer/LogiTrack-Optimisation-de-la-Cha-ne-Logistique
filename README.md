@@ -1,10 +1,10 @@
-# 🚚 LogiTrack — Optimisation de la Chaîne Logistique
+#  LogiTrack — Optimisation de la Chaîne Logistique
 
 Application web intelligente dédiée au **suivi, l’analyse et l’optimisation de la chaîne logistique**, visant à réduire les retards de production et améliorer la prise de décision.
 
 ---
 
-## 🎯 Objectifs
+##  Objectifs
 
 * Réduire les ruptures et surstocks
 * Optimiser la gestion des commandes fournisseurs
@@ -13,7 +13,7 @@ Application web intelligente dédiée au **suivi, l’analyse et l’optimisatio
 
 ---
 
-## 🛠️ Stack Technique
+##  Stack Technique
 
 * **Backend** : NestJS (Node.js) — port 3001
 * **Frontend** : React.js + Recharts — port 3000
@@ -86,32 +86,32 @@ http://localhost:3000
 
 ---
 
-## 🚀 Fonctionnalités
+## Fonctionnalités
 
-### 📊 Tableau de bord
+###  Tableau de bord
 
 * KPI en temps réel
 * Graphiques dynamiques (Recharts)
 * Alertes intelligentes
 
-### 📦 Gestion des Stocks
+###  Gestion des Stocks
 
 * CRUD des articles
 * Calcul automatique du **DOH (Days on Hand)**
 * Détection de surstock
 
-### 🏭 WIP (Work In Progress)
+###  WIP (Work In Progress)
 
 * Suivi des encours par ligne / zone
 * Détection des écarts
 
-### 📝 Commandes
+###  Commandes
 
 * Création de commandes fournisseurs
 * Validation / Blocage
 * Suivi des statuts
 
-### 👥 Utilisateurs
+###  Utilisateurs
 
 * Gestion des comptes
 * Attribution des rôles
@@ -119,7 +119,7 @@ http://localhost:3000
 
 ---
 
-## 🧠 Structure du Projet
+##  Structure du Projet
 
 ```
 logistique-app/
@@ -172,14 +172,7 @@ GET    /api/utilisateurs
 
 ---
 
-## 📈 Améliorations Futures
 
-* Intégration IA pour prédiction des ruptures
-* Dashboard avancé (BI / Machine Learning)
-* Version mobile (Flutter)
-* Notifications en temps réel
-
----
 
 ## 👨‍💻 Auteur
 
