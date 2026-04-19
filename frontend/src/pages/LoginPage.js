@@ -61,10 +61,7 @@ export default function LoginPage() {
             </button>
           </form>
 
-          <div style={{ marginTop: 16, padding: 12, background: '#0f172a', borderRadius: 6, fontSize: 12, color: '#64748b' }}>
-            <strong style={{ color: '#475569' }}>Compte test :</strong><br />
-            admin@logistique.com / Admin123!
-          </div>
+          
         </div>
       </div>
     </div>
